@@ -1,0 +1,15 @@
+{
+  "config": "pages.json",
+  "theme": null,
+  "sample": ".",
+  "version": "0.154.5",
+  "slug": "hugo-theme-gruvbox",
+  "npm": [
+    "."
+  ],
+  "asset_build": [],
+  "generator": "3.1",
+  "repo": "https://github.com/khj56366-droid/portfolio.git",
+  "baseURL": "https://khj56366-droid.github.io/portfolio/",
+  "audited": true
+}
