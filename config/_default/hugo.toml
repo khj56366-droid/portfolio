@@ -1,6 +1,6 @@
 baseURL = "http://localhost"
-copyright = "Copyright © 2021"
-title = "hugo-theme-gruvbox"
+copyright = "Copyright © 2026 김형준"
+title = "포트폴리오"
 #paginate = 10
 enableRobotsTXT = true
 # Enable to calculate the last modified date from Git history and show it in the post header
@@ -45,12 +45,12 @@ enableRobotsTXT = true
   #themeColor = "blue"
   # soft medium hard, defaults to medium
   #themeContrast = "medium"
-  author = "Michael Schnerring"
-  subtitle = "Theme Demo"
-  description = "A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes."
+  author = "김형준"
+  subtitle = "컴퓨터인공지능"
+  description = "초급프로젝트 과목 수강중인 컴퓨터인공지능학과 김형준입니다. "
 
   [params.logo]
-    text = "gruvbox"
+    text = "김형준"
     url = "/"
 
   [params.prism]
