@@ -1,86 +1,52 @@
-name: Publish Hugo Site
+name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]        # main에 push할 때마다 자동 배포
+  workflow_dispatch:         # Actions 탭에서 수동 실행도 가능
+
+permissions:                 # GitHub Pages 배포에 필요한 권한
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
-  update_hugo_npm_dependencies:
-    name: Update Hugo npm Dependencies
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    outputs:
-      commit_hash: ${{ steps.commit_changes.outputs.commit_hash }}
+    env:
+      HUGO_VERSION: 0.147.0  # ← 테마 README의 최소 Hugo 버전 이상으로 맞추세요
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v5
+      - name: Install Hugo (extended)
+        run: |
+          wget -O "$RUNNER_TEMP/hugo.deb" https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+          sudo dpkg -i "$RUNNER_TEMP/hugo.deb"
 
-      - name: Install Node
-        uses: actions/setup-node@v5
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+        id: pages
+
+      # 테마에 package.json이 있고 npm 패키지가 필요하면 이 줄의 주석을 해제
+      # - run: npm ci
+
+      - name: Build
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        #  ↑ baseURL을 GitHub Pages 주소로 자동 지정 (CSS 깨짐 방지)
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          node-version: "24"
+          path: ./public
 
-      - name: Install Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.148.2"
-          extended: true
-
-      - name: Write composite package.json
-        run: hugo mod npm pack
-
-      - name: Install npm Packages
-        run: npm install
-
-      - name: Display Changes
-        run: git status
-
-      - name: Commit Changes
-        id: commit_changes
-        uses: stefanzweifel/git-auto-commit-action@v6
-        with:
-          commit_message: Update Hugo npm Dependencies
-          commit_author:
-            renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
-
-  publish:
-    name: Publish Hugo Site
-    needs: update_hugo_npm_dependencies
+  deploy:
+    needs: build
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-          ref: ${{ needs.update_hugo_npm_dependencies.outputs.commit_hash }}
-
-      - name: Install Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: "24"
-
-      - name: Install Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.148.2"
-          extended: true
-
-      - name: Install npm Packages
-        run: npm ci
-
-      - name: Build Hugo
-        run: hugo --minify
-
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: hugo-theme-gruvbox
-          directory: ./public
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - id: deployment
+        uses: actions/deploy-pages@v4
