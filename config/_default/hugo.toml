@@ -150,6 +150,7 @@ enableRobotsTXT = true
     name = "CV"
     url = "/cv"
     weight = 20
+    
   [[menu.main]]
     identifier = "About"
     name = "자기소개"
