@@ -1,46 +1,31 @@
 +++
-author = "Hugo Authors"
-title = "Placeholder Text"
-date = "2019-03-09"
-description = "Lorem Ipsum Dolor Si Amet"
+author = "김형준"
+title = "나의 성장 과정"
+date = "2026-11-07T00:00:00+09:00"
+description = "어린 시절부터 현재까지의 성장 과정과 진로 형성"
 tags = [
-    "markdown",
-    "text",
-    "hugo-basic-example",
+    "성장과정",
+    "자기소개",
 ]
 +++
 
-Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.
+## 1. 어린 시절
 
-1. Exierant elisi ambit vivere dedere
-2. Duce pollice
-3. Eris modo
-4. Spargitque ferrea quos palude
+초등학교 시절에는 축구부 활동을 하며 축구를 접했습니다. 친구들과 함께 운동하고 어울리며 즐거운 학창 시절을 보냈습니다.
 
-Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.
+이와 함께 컴퓨터 방과후 수업에도 참여했습니다. 축구뿐만 아니라 컴퓨터를 접할 기회도 경험하면서 다양한 활동을 해보았습니다.
 
-1. Comas hunc haec pietate fetum procerum dixit
-2. Post torum vates letum Tiresia
-3. Flumen querellas
-4. Arcanaque montibus omnes
-5. Quidem et
 
-# Vagus elidunt
+## 2. 중학교 시절
 
-<svg class="canon" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 496 373" height="373" width="496"><g fill="none"><path stroke="#000" stroke-width=".75" d="M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515"></path><path stroke="#ED1C24" stroke-width=".75" d="M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z"></path><path stroke="#000" stroke-width=".75" d="M.479.375h495v372h-495zM247.979.875v372"></path><ellipse cx="498.729" cy="177.625" rx=".75" ry="1.25"></ellipse><ellipse cx="247.229" cy="377.375" rx=".75" ry="1.25"></ellipse></g></svg>
+중학교에 진학한 이후에도 축구부 활동을 이어갔습니다. 초등학교 때부터 좋아했던 축구를 계속하면서 운동을 즐겼습니다.
 
-[The Van de Graaf Canon](https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon)
+또한 친구들과 함께 어울려 시간을 보내는 것을 좋아했습니다. 친구들과 다양한 경험을 하며 중학교 시절을 보냈습니다.
 
-## Mane refeci capiebant unda mulcebat
+## 3. 진로를 고민하다
 
-Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. **Faces illo pepulere** tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.
+고등학교에 진학하면서 자신의 진로에 대해 본격적으로 고민하기 시작했습니다.
 
-Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.
+어린 시절부터 경험했던 다양한 활동을 돌아보고, 앞으로 어떤 분야를 공부하며 나아갈지 생각하게 되었습니다. 이 시기를 거치며 자신의 진로를 결정하게 되었습니다.
 
-Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel **mitis temploque** vocatus, inque alis, *oculos nomen* non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides **parte**.
 
-{{< css.inline >}}
-<style>
-.canon { background: white; width: 100%; height: auto; }
-</style>
-{{< /css.inline >}}
