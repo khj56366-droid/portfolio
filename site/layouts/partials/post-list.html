@@ -1,4 +1,4 @@
-{{ range $pageIndex, $page := .Pages }}
+{{ range $pageIndex, $page := .Pages.ByWeight }}
   <article class="post">
     <div class="post-header">
       <h2>
