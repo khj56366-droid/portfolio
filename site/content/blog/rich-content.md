@@ -1,35 +1,22 @@
 +++
-author = "Hugo Authors"
-title = "Rich Content"
+author = "김형준"
+title = "축구와 IT"
 date = "2019-03-10"
-description = "A brief description of Hugo Shortcodes"
+description = "축구를 즐기던 내가 컴퓨터와 IT분야로 관심을 넓혀온 과정"
 tags = [
-    "shortcodes",
-    "privacy",
-    "hugo-basic-example",
+    "관심분야",
+    "컴퓨터",
+    "IT",
+    "성장과정",
 ]
 +++
 
-Hugo ships with several [Embedded Shortcodes](https://gohugo.io/content-management/shortcodes/#embedded) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
-<!--more-->
----
+저는 어릴 때부터 축구와 컴퓨터를 좋아했습니다. 축구를 직접 하면서 몸을 움직이는 즐거움을 느꼈고, 좋아하는 팀의 경기를 보며 축구에 대한 관심을 이어 왔습니다. 축구는 단순히 보는 스포츠가 아니라 직접 참여하고 즐기는 활동이었습니다.
 
-## YouTube Privacy Enhanced Shortcode
+컴퓨터 역시 오랫동안 제 일상에서 함께한 존재였습니다. 처음에는 게임을 하거나 인터넷을 이용하는 등 일반적인 용도로 사용했지만, 시간이 지나면서 컴퓨터 자체에 대한 궁금증이 생겼습니다.
 
-{{< youtube ZJthWmvUzzc >}}
+특히 코로나 시기에는 컴퓨터를 접하는 시간이 늘어나면서 관심 분야도 다양해졌습니다. 영상 편집을 배우고, 게임이 어떤 환경에서 원활하게 작동하는지 알아보기도 했습니다. 더 나아가 컴퓨터 부품마다 어떤 역할을 하는지 공부하고, 직접 부품을 선택해 PC를 조립하는 경험도 했습니다.
 
-<br>
+이 과정에서 컴퓨터를 단순히 사용하는 것과 컴퓨터의 작동 원리를 이해하는 것은 전혀 다른 즐거움이라는 것을 알게 되었습니다. 하드웨어의 구조를 알아가는 것부터 소프트웨어가 작동하는 방식까지, 하나씩 이해하고 직접 경험하는 과정이 흥미로웠습니다.
 
----
-
-## X Simple Shortcode
-
-{{< x user="DesignReviewed" id="1085870671291310081" >}}
-
-<br>
-
----
-
-## Vimeo Simple Shortcode
-
-{{< vimeo_simple 48912912 >}}
+축구와 컴퓨터는 서로 다른 분야이지만, 제가 좋아하는 것을 직접 경험하고 더 깊이 알아가려는 태도는 두 관심사에 공통적으로 이어져 있습니다. 앞으로도 이러한 호기심을 바탕으로 다양한 분야를 경험하고 새로운 것을 배워 나가고 싶습니다.
