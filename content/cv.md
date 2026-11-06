@@ -1,5 +1,5 @@
 ---
-title: "CV"
+title: "개인프로필"
 draft: false
 type: "cv"
 ---
