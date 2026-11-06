@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>실습:자기소개 페이지 꾸미기</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: sans-serif; margin: 16px; }
+    .card {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #aaa;
+      border-radius: 20px;
+    }
+    .card.dark { background: #1f2937; color: #f9fafb; border-color: #374151; }
+    .toolbar { text-align: right; }
+    button { padding: 8px 14px; border: 1px solid #9ca3af; border-radius: 8px; background: #fff; }
+    h1 { margin: 0 0 6px; font-size: 26px; }
+    .card p { margin: 0; color: #6b7280; }
+    .card.dark p { color: #d1d5db; }
+    
+    .profile { display: flex; gap: 16px; align-items: center; }
+    .profile img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; } 
+    
+    @media (max-width: 500px) {
+      .profile { flex-direction: column; text-align: center; }
+    }
+     .add-row { display: flex; gap: 8px; }
+    .add-row input { flex: 1; min-width: 0; padding: 8px; }
+
+    .hobbies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+      list-style: none;
+      margin-top: 16px;
+    }
+    .hobbies li {
+      padding: 12px 20px;
+      background: #eee;
+      border-radius: 6px;
+      flex: 1 1 120px; padding: 12px 20px; background: #eee; border-radius: 6px; text-align: center;
+    }
+    button {
+      padding: 15px;
+      margin: 5px;
+      background: #0e0d0d;
+      border: 1px solid #888;
+      border-radius: 6px;
+      cursor: pointer;
+      color : white;
+    }
+    button:hover {
+      background: #3758ec;
+      transform: translateY(-6px);
+    }
+    .move:hover   { transform: translateY(-12px); }
+    .smooth {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div>
+
+    </div>
+    <div class="profile">
+        <img src="https://boseung2.github.io/project-beginner-ta/assets/tennis-ball-square.jpg" alt="테니스공 사진">
+        <div>
+            <h1>김형준</h1>
+            <p>컴퓨터인공지능학부 - 축구와 머신러닝</p>
+        </div>
+    </div>
+    취미 4개
+    <div class="hobbies">
+        <li>축구</li>
+        <li>음악 감상</li>
+        <li>러닝</li>
+        <li>잠 </li>
+    </div>
+        <button type="button" class="smooth"
+        onclick="location.href='https://github.com/'">
+  관심 있는 사이트
+</button>
+  </div> 
+<script>
+  const
+
+    console.log(" HI   ")
+  </script>
+</body>
+</html>
