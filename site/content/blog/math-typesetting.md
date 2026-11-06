@@ -1,51 +1,62 @@
----
-author: Hugo Authors
-title: Math Typesetting
-date: 2019-03-08
-description: A brief guide to setup KaTeX
-math: true
-tags: 
-  - "hugo-basic-example"
----
++++
+author = "김형준"
+title = "나의 기술 역량과 프로젝트 경험"
+date = "2026-11-07T00:00:00+09:00"
+description = "프로그래밍 언어와 개발 도구를 학습하며 쌓은 기술 역량과 프로젝트 경험"
+tags = [
+    "기술역량",
+    "프로그래밍",
+    "프로젝트",
+    "개발",
+]
++++
 
-Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
-<!--more-->
+## 프로그래밍 학습
 
-In this example we will be using [KaTeX](https://katex.org/)
+컴퓨터인공지능학과에서 다양한 프로그래밍 언어와 컴퓨터 관련 기술을 학습하고 있습니다.
 
-- Create a partial under `/layouts/partials/math.html`
-- Within this partial reference the [Auto-render Extension](https://katex.org/docs/autorender.html) or host these scripts locally.
-- Include the partial in your templates like so:  
+- **C언어:** 기본 문법, 포인터, 파일 입출력 등을 학습하고 배열 기반 이진 검색 트리와 같은 자료구조를 구현했습니다.
+- **Java:** 클래스와 객체, 상속, 인터페이스, 제네릭 및 컬렉션을 학습하고 Swing을 활용한 GUI 프로그램을 제작했습니다.
+- **Python:** 기본 문법과 프로그래밍 기초를 학습하고 있습니다.
 
-```bash
-{{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
-{{ end }}
-```
+## 개발 환경 및 도구 활용
 
-- To enable KaTex globally set the parameter `math` to `true` in a project's configuration
-- To enable KaTex on a per page basis include the parameter `math: true` in content files
+- **Linux:** Ubuntu 환경에서 기본 명령어, 파일 및 디렉터리 관리, 권한 설정 등을 실습했습니다.
+- **Git/GitHub:** 저장소 생성, 브랜치 관리, 커밋과 푸시 등 버전 관리 과정을 익히고 있습니다.
+- **GitHub Actions:** GitHub 저장소와 연동하여 웹사이트를 자동으로 빌드하고 배포하는 과정을 경험했습니다.
 
-**Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
+## 프로젝트 경험
 
-{{< math.inline >}}
-{{ if or .Page.Params.math .Site.Params.math }}
-<!-- KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
-{{ end }}
-{{</ math.inline >}}
+### 1. TA 자기소개 웹페이지
 
-### Examples
+HTML과 CSS를 활용하여 자기소개 웹페이지를 제작했습니다.
 
-{{< math.inline >}}
-<p>
-Inline math: \(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\)
-</p>
-{{</ math.inline >}}
+- 프로필과 취미 등 개인 정보 구성
+- Flexbox를 활용한 웹페이지 레이아웃 구성
+- 미디어 쿼리를 활용한 반응형 웹 디자인
+- Hover와 Transition을 활용한 시각적 효과 적용
+- 버튼 등 사용자 인터페이스 요소 구현
 
-Block math:
-$$
- \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
-$$
+웹페이지의 구조와 디자인을 직접 구성하면서 웹 개발의 기본적인 원리를 익혔습니다.
+
+### 2. Hugo 개인 소개 웹사이트
+
+TA 자기소개 웹페이지와는 별도로 Hugo를 활용한 개인 포트폴리오 웹사이트를 제작하고 있습니다.
+
+- Hugo 기반 정적 웹사이트 구성
+- Markdown을 활용한 게시글 작성 및 수정
+- 개인 프로필과 성장 과정, 관심 분야 소개
+- 이미지와 태그를 활용한 콘텐츠 구성
+- GitHub Pages와 GitHub Actions를 활용한 자동 배포
+
+웹사이트의 콘텐츠뿐 아니라 배포 과정까지 직접 관리하며 웹사이트 운영 과정을 경험하고 있습니다.
+
+### 3. React와 Firebase 미니 Todo 프로젝트
+
+React와 Firebase를 활용하는 미니 Todo 프로젝트를 진행하며 웹 애플리케이션의 구조와 기능 구현 과정을 학습하고 있습니다.
+
+프로젝트를 통해 컴포넌트와 상태 관리 등 React의 기본 개념을 익히고, Firebase를 활용한 웹 애플리케이션 개발 과정을 경험하고 있습니다.
+
+## 앞으로의 목표
+
+현재는 다양한 프로그래밍 언어와 개발 도구의 기초를 익히고 실제 프로젝트에 적용해보고 있습니다. 앞으로는 단순히 문법을 익히는 것에 그치지 않고, 배운 기술을 활용해 직접 문제를 해결하고 완성도 있는 결과물을 만들어 내는 개발 역량을 키워 나가고 싶습니다.
