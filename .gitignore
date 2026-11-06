@@ -170,5 +170,3 @@ dist
 **/resources/_gen/
 **/.hugo_build.lock
 /.github-pages-setup-backups/
-
-site/
