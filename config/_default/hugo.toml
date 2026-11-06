@@ -151,10 +151,10 @@ enableRobotsTXT = true
     url = "/cv"
     weight = 20
   [[menu.main]]
-    identifier = "자기소개"
-    name = "About"
+    identifier = "About"
+    name = "자기소개"
     url = "/about"
-    weight = 30
+    weight = 40
 
 [languages]
   [languages.en]
