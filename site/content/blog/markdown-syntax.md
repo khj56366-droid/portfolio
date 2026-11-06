@@ -1,149 +1,40 @@
 +++
-author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+author = "김형준"
+title = "대학 생활과 전공 선택"
+date = "2026-11-07T00:00:00+09:00"
+description = "컴퓨터에 대한 관심에서 인공지능 분야를 선택하기까지"
 tags = [
-    "markdown",
-    "css",
-    "html",
-    "hugo-basic-example",
+    "대학 생활",
+    "전공 선택",
+    "컴퓨터",
+    "인공지능",
 ]
-categories = [
-    "themes",
-    "syntax",
-]
-series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-<!--more-->
+## 1. 컴퓨터와 가까워진 시기
 
-## Headings
+코로나가 유행하던 시기에 학교도 못가서 집에만 있는 시간이 늘어나면서 컴퓨터를 사용하는 시간이 자연스럽게 많아졌습니다. 컴퓨터로 다양한 활동을 하면서 점점 컴퓨터 자체에 관심을 가지게 되었습니다.
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+처음에는 게임을 즐기거나 편집을 배우는 등 컴퓨터를 활용하는 활동에 흥미를 느꼈습니다. 하지만 게임을 하는데에도 컴퓨터에 대한 이해가 필요했고 컴퓨터에 대해 알아가면서 컴퓨터에 대한 지식이 필요하다는 것을 알게 되었습니다.
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+## 2. 직접 배우고 경험하다
 
-## Paragraph
+컴퓨터에 대한 관심은 단순히 사용하는 것에서 그치지 않았습니다.
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+게임을 원활하게 실행하기 위해 컴퓨터의 부품과 성능에 대해 공부했고, 직접 부품을 알아보고 컴퓨터를 조립하기도 했습니다.(이제는 가격때문에 쉽지 않아졌지만..)
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+이러한 경험을 통해 컴퓨터가 어떻게 구성되고 작동하는지 조금씩 알아가는 과정에 재미를 느꼈습니다.
 
-## Blockquotes
+## 3. 컴퓨터인공지능학과를 선택하다
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+컴퓨터에 대한 관심이 이어지면서 인공지능 기술에도 흥미를 가지게 되었습니다.
 
-#### Blockquote without attribution
+컴퓨터를 직접 다루고 공부하면서 쌓인 관심에 더해, 인공지능 기술이 발전하는 모습을 보며 관련 분야를 깊이 공부해 보고 싶다는 생각이 들었습니다.
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+이러한 이유로 컴퓨터와 인공지능을 함께 배울 수 있는 컴퓨터인공지능학과를 선택하게 되었습니다.
 
-#### Blockquote with attribution
+## 4. 대학 생활을 통해 배우는 것들
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+대학에 입학한 이후 C언어, Java, Python 등 다양한 프로그래밍 언어를 배우고 있습니다. 또한 Linux와 Git, GitHub 등을 활용하면서 개발 환경에 대해서도 익히고 있습니다.
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
-
-## Code Blocks
-
-#### Code block with backticks
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
-
-#### Code block indented with four spaces
-
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
-
-#### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-* List item
-* Another item
-* And another item
-
-#### Nested list
-
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+아직 배워야 할 내용이 많지만, 컴퓨터에 대한 관심으로 시작한 경험이 전공 공부로 이어졌다는 점에서 의미가 있다고 생각합니다.
