@@ -591,19 +591,13 @@ You can add new CSS files to the PostCSS pipeline like this:
 
 \### 1. 개발 환경
 
-| 도구 | 버전 |
-
-|---|---|
-
-| Hugo Extended | 0.154.5 |
-
-| Node.js | 24 |
-
-| Go | 1.27.1 |
-
-| Python | 3.12 |
-
-| Dart Sass | 1.105.0 |
+| 도구 | 로컬 작성·확인 환경 | GitHub Actions 배포 환경 |
+|---|---|---|
+| Hugo Extended | 0.169.0 | 0.154.5 |
+| Node.js | 26.13.0 | 24 |
+| Go | 1.27.3 | 1.27.1 |
+| Python | 3.14.10 | 3.12 |
+| Dart Sass | 설치하지 않음 (로컬 실행에 불필요) | 1.105.0 |
 
 \### 2. 설치 및 실행
 
@@ -612,7 +606,7 @@ You can add new CSS files to the PostCSS pipeline like this:
 ```bash
 
 python .github/pages\_build.py --dependencies
-
+이 명령은 GitHub Actions의 Prepare dependencies 단계에서도 같은 방식으로 실행됩니다.
 ```
 
 사이트를 빌드합니다.
@@ -666,3 +660,15 @@ GitHub 저장소의 Actions 탭에서 `Deploy Hugo to GitHub Pages` 작업이 �
 배포가 완료되면 공개 사이트에서 변경 내용을 확인합니다.
 
 <https://khj56366-droid.github.io/portfolio/>
+
+## 출처 및 이용 조건
+
+* 사이트 테마: hugo-theme-gruvbox
+  (<https://github.com/schnerring/hugo-theme-gruvbox>),
+  Copyright (c) 2021 Michael Schnerring, MIT License.
+  원본 LICENSE 파일을 저장소에 그대로 유지했습니다.
+* 이력 표시 모듈: hugo-mod-json-resume
+  (<https://github.com/schnerring/hugo-mod-json-resume>),
+  Hugo 모듈로 사용
+* 직접 제작: 자기소개, 이력(ko.json/en.json), 프로필 사진, 포트폴리오 콘텐츠 글
+* AI 도움: README 초안과 설정 오류 해결 과정에서 AI의 제안을 참고했으며, 적용 전에 직접 실행해 확인했습니다.
