@@ -50,8 +50,8 @@ enableRobotsTXT = true
   description = "초급프로젝트 과목 수강중인 컴퓨터인공지능학과 김형준입니다. "
 
   [params.logo]
-    text = "홈"
-    url = "/"
+  text = "홈"
+  url = "/portfolio/"
 
   [params.prism]
     languages = [
