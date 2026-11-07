@@ -12,7 +12,7 @@ I took a lot of inspiration from the
 
 ## DEMO [https://hugo-theme-gruvbox.schnerring.net/](https://hugo-theme-gruvbox.schnerring.net/)
 
-![Screenshot of the theme in dark and light colors](https://raw.githubusercontent.com/schnerring/hugo-theme-gruvbox/main/images/tn.png)
+!\[Screenshot of the theme in dark and light colors](<https://raw.githubusercontent.com/schnerring/hugo-theme-gruvbox/main/images/tn.png>)
 
 ## DISCLAIMER: Project Status
 
@@ -22,21 +22,21 @@ to see what's still missing.
 
 ## Highlights
 
-- [Code highlighting with Prism](#prism)
-- Full-text search with [Flex Search](https://github.com/nextapps-de/flexsearch)
-- Display your CV using structured [JSON Resume](https://jsonresume.org/) data
-- [Integrated image optimization with next-gen image formats and lazy loading](#image-optimization)
-- Dark mode that also changes Prism themes
-- [Dynamic color choices from the Gruvbox color palette](#colors)
-- [Extensible to make it suit your needs](#extensibility)
-- Responsive, mobile-first design
-- Beautiful SVG icons with [Tabler Icons](https://tabler-icons.io/)
+* [Code highlighting with Prism](#prism)
+* Full-text search with [Flex Search](https://github.com/nextapps-de/flexsearch)
+* Display your CV using structured [JSON Resume](https://jsonresume.org/) data
+* [Integrated image optimization with next-gen image formats and lazy loading](#image-optimization)
+* Dark mode that also changes Prism themes
+* [Dynamic color choices from the Gruvbox color palette](#colors)
+* [Extensible to make it suit your needs](#extensibility)
+* Responsive, mobile-first design
+* Beautiful SVG icons with [Tabler Icons](https://tabler-icons.io/)
 
 A big thank you to the authors of the software that make this theme possible! ❤️
 
 ## Quickstart
 
-The theme requires _extended_ Hugo because it uses Sass/SCSS. You'll also have
+The theme requires *extended* Hugo because it uses Sass/SCSS. You'll also have
 to install Go because the theme uses Go modules.
 
 1. `git clone` the repository and `cd` into it
@@ -61,68 +61,68 @@ hugo mod init example.com
 Add the following to the `hugo.toml` file:
 
 ```toml
-[markup]
+\[markup]
   # (Optional) To be able to use all Prism plugins, the theme enables unsafe
   # rendering by default
-  #_merge = "deep"
+  #\_merge = "deep"
 
-[build]
+\[build]
   # Merge build config of the theme
-  _merge = "deep"
+  \_merge = "deep"
 
-[outputs]
+\[outputs]
   # The search requires rendering the theme's `searchIndex` output format
-  home = ["html", "searchIndex"]
+  home = \["html", "searchIndex"]
 
 # This hopefully will be simpler in the future.
 # See: https://github.com/schnerring/hugo-theme-gruvbox/issues/16
-[module]
-  [[module.imports]]
+\[module]
+  \[\[module.imports]]
     path = "github.com/schnerring/hugo-theme-gruvbox"
-  [[module.imports]]
+  \[\[module.imports]]
     path = "github.com/schnerring/hugo-mod-json-resume"
-    [[module.imports.mounts]]
+    \[\[module.imports.mounts]]
       # This will add the sample Richard Hendricks CV data
       source = "data"
       target = "data"
-    [[module.imports.mounts]]
+    \[\[module.imports.mounts]]
       source = "layouts"
       target = "layouts"
-    [[module.imports.mounts]]
+    \[\[module.imports.mounts]]
       source = "assets/css/json-resume.css"
       target = "assets/css/critical/44-json-resume.css"
-  [[module.mounts]]
+  \[\[module.mounts]]
     # required by hugo-mod-json-resume
-    source = "node_modules/simple-icons/icons"
+    source = "node\_modules/simple-icons/icons"
     target = "assets/simple-icons"
-  [[module.mounts]]
+  \[\[module.mounts]]
     source = "assets"
     target = "assets"
-  [[module.mounts]]
+  \[\[module.mounts]]
     source = "layouts"
     target = "layouts"
-  [[module.mounts]]
+  \[\[module.mounts]]
     source = "static"
     target = "static"
-  [[module.mounts]]
-    source = "node_modules/prismjs"
+  \[\[module.mounts]]
+    source = "node\_modules/prismjs"
     target = "assets/prismjs"
-  [[module.mounts]]
-    source = "node_modules/prism-themes/themes"
+  \[\[module.mounts]]
+    source = "node\_modules/prism-themes/themes"
     target = "assets/prism-themes"
-  [[module.mounts]]
-    source = "node_modules/typeface-fira-code/files"
+  \[\[module.mounts]]
+    source = "node\_modules/typeface-fira-code/files"
     target = "static/fonts"
-  [[module.mounts]]
-    source = "node_modules/typeface-roboto-slab/files"
+  \[\[module.mounts]]
+    source = "node\_modules/typeface-roboto-slab/files"
     target = "static/fonts"
-  [[module.mounts]]
-    source = "node_modules/@tabler/icons/icons"
+  \[\[module.mounts]]
+    source = "node\_modules/@tabler/icons/icons"
     target = "assets/tabler-icons"
-  [[module.mounts]]
-    # Add hugo_stats.json to Hugo's server watcher
-    source = "hugo_stats.json"
-    target = "assets/watching/hugo_stats.json"
+  \[\[module.mounts]]
+    # Add hugo\_stats.json to Hugo's server watcher
+    source = "hugo\_stats.json"
+    target = "assets/watching/hugo\_stats.json"
 ```
 
 Install the theme:
@@ -164,15 +164,15 @@ npm install
 
 Two options are available to configure the theme colors:
 
-- `defaultTheme`: `dark` or `light` (defaults to `light`)  
-  Default theme color for when a user visits the site for the first time. OS or
-  user preference override this setting.
-  [See this comment for more details.](https://github.com/schnerring/hugo-theme-gruvbox/issues/34#issuecomment-1235870375)
-- `themeColor`: `gray`, `red`, `green`, `yellow`, `blue`, `purple`, `aqua`, or
-  `orange` (defaults to `blue`)  
-  Theme color for things such as links, headings etc.
-- `themeContrast`: `soft`, `medium`, or `hard` (defaults to `medium`)  
-  Theme background color
+* `defaultTheme`: `dark` or `light` (defaults to `light`)  
+Default theme color for when a user visits the site for the first time. OS or
+user preference override this setting.
+[See this comment for more details.](https://github.com/schnerring/hugo-theme-gruvbox/issues/34#issuecomment-1235870375)
+* `themeColor`: `gray`, `red`, `green`, `yellow`, `blue`, `purple`, `aqua`, or
+`orange` (defaults to `blue`)  
+Theme color for things such as links, headings etc.
+* `themeContrast`: `soft`, `medium`, or `hard` (defaults to `medium`)  
+Theme background color
 
 ## Prism
 
@@ -180,15 +180,15 @@ The theme allows customization of [Prism](https://prismjs.com/) via `hugo.toml`
 parameters:
 
 ```toml
-[params]
-  [params.prism]
-    languages = [
+\[params]
+  \[params.prism]
+    languages = \[
       "markup",
       "css",
       "clike",
       "javascript"
     ]
-    plugins = [
+    plugins = \[
       "normalize-whitespace",
       "toolbar",
       "copy-to-clipboard"
@@ -215,10 +215,10 @@ After running `npm install`, explore Prism features like this:
 
 ```shell
 # Languages
-ls node_modules/prismjs/components
+ls node\_modules/prismjs/components
 
 # Plugins
-ls node_modules/prismjs/plugins
+ls node\_modules/prismjs/plugins
 ```
 
 ## Image Optimization
@@ -250,15 +250,15 @@ The default quality is 75%. See the
 Change it by adding the following to the `hugo.toml` file:
 
 ```toml
-[imaging]
+\[imaging]
   quality = 75
 ```
 
 Change the resize behavior:
 
 ```toml
-[params]
-  [params.imageResize]
+\[params]
+  \[params.imageResize]
     min = 300
     max = 700
     increment = 100
@@ -267,7 +267,7 @@ Change the resize behavior:
 ### Captions
 
 ```markdown
-![Alt text](image-url.jpg "Caption with **markdown support**")
+!\[Alt text](image-url.jpg "Caption with \*\*markdown support\*\*")
 ```
 
 [The demo site features examples you can look at](https://hugo-theme-gruvbox.schnerring.net/blog/image-optimization/).
@@ -284,7 +284,7 @@ posts:
 cover:
   src: my-blog-cover.jpg
   alt: A beautiful image containing interesting things
-  caption: [Source](https://www.flickr.com/)
+  caption: \[Source](https://www.flickr.com/)
 ---
 ```
 
@@ -311,7 +311,7 @@ You can embed `my-video` like this:
 {{< video src="my-video" autoplay="true" controls="false" loop="true" >}}
 ```
 
-The shortcode looks for media files matching the filename `my-video*`. For each
+The shortcode looks for media files matching the filename `my-video\*`. For each
 `video` MIME type file, a `<source>` element is added. The first `image` MIME
 type file is used as `poster` (thumbnail). It will render the following HTML:
 
@@ -332,16 +332,16 @@ You can set a Markdown `caption`, wrapping the `<video>` inside a `<figure`>.
 
 Additionally, the shortcode allows you to set the following attributes:
 
-| Attribute   | Default |
-| ----------- | ------- |
-| autoplay    | `false` |
-| controls    | `true`  |
-| height      |         |
-| loop        | `false` |
-| muted       | `true`  |
-| preload     |         |
-| width       | `100%`  |
-| playsinline | `true`  |
+|Attribute|Default|
+|-|-|
+|autoplay|`false`|
+|controls|`true`|
+|height||
+|loop|`false`|
+|muted|`true`|
+|preload||
+|width|`100%`|
+|playsinline|`true`|
 
 [Learn more about the `<video>` attributes here.](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#attributes)
 
@@ -370,19 +370,19 @@ robots: noindex, nofollow
 Configure social share links in the Hugo config like this:
 
 ```toml
-[params]
-  [[params.socialShare]]
+\[params]
+  \[\[params.socialShare]]
     iconSuite = "simple-icon"
     iconName = "facebook"
     formatString = "https://www.facebook.com/sharer.php?u={url}"
-  [[params.socialShare]]
+  \[\[params.socialShare]]
     iconSuite = "simple-icon"
     iconName = "reddit"
-    formatString = "https://reddit.com/submit?url={url}&title={title}"
-  [[params.socialShare]]
+    formatString = "https://reddit.com/submit?url={url}\&title={title}"
+  \[\[params.socialShare]]
     iconSuite = "tabler-icon"
     iconName = "outline/mail"
-    formatString = "mailto:?subject={title}&body={url}"
+    formatString = "mailto:?subject={title}\&body={url}"
 ```
 
 Use the `iconSuite` setting to specify the icon suite used for the social share
@@ -393,8 +393,8 @@ link: `simple-icon` or `tabler-icon`. Select an icon from the suite with the
 
 The `formatString` supports the following placeholders:
 
-- `{url}` is replaced with the `.Permalink` of the post
-- `{title}` is replaced with the `.Title` of the post
+* `{url}` is replaced with the `.Permalink` of the post
+* `{title}` is replaced with the `.Title` of the post
 
 To enable social share links, set the following in the post's front matter:
 
@@ -423,14 +423,14 @@ directory.
 You can extend the theme by overriding the following partials in the
 `layouts/partials` directory which by default are empty placeholder files:
 
-- [`head/head_start.html`](./layouts/partials/head_start.html)  
-  Custom HTML at the start of `<head>`
-- [`head/head_end.html`](./layouts/partials/head_end.html)  
-  Custom HTML at the end of `<head>`
-- [`footer_end.html`](./layouts/partials/footer_end.html)  
-  Custom HTML at the end of `<body>`
-- [`comments.html`](./layouts/partials/comments.html)  
-  Comments at the end of posts
+* [`head/head\_start.html`](./layouts/partials/head_start.html)  
+Custom HTML at the start of `<head>`
+* [`head/head\_end.html`](./layouts/partials/head_end.html)  
+Custom HTML at the end of `<head>`
+* [`footer\_end.html`](./layouts/partials/footer_end.html)  
+Custom HTML at the end of `<body>`
+* [`comments.html`](./layouts/partials/comments.html)  
+Comments at the end of posts
 
 ### Example: Adding KaTeX Support to the Theme
 
@@ -446,16 +446,16 @@ following to the `package.hugo.json` file:
 
 Then run `hugo mod npm pack` to sync the `package.hugo.json` dependencies with
 `package.json`. Run `npm install` after. We then need to mount the
-`node_modules/katex` folder into Hugo's virtual filesystem by adding the
-following to the `config/_default/module.toml` file:
+`node\_modules/katex` folder into Hugo's virtual filesystem by adding the
+following to the `config/\_default/module.toml` file:
 
 ```toml
-[[mounts]]
-  source = "node_modules/katex"
+\[\[mounts]]
+  source = "node\_modules/katex"
   target = "assets/katex"
 ```
 
-We can then add the following to `layouts/partials/head/head_end.html`:
+We can then add the following to `layouts/partials/head/head\_end.html`:
 
 <!-- prettier-ignore-start -->
 
@@ -514,10 +514,10 @@ I'm a .NET developer by trade, so let's say hello in C#!
 
 The theme comes with a tag cloud partial. It is included in the sidebar, but it
 is disabled by default. If you wish to configure it, add the following to the
-`[params]` section in the `hugo.toml` file:
+`\[params]` section in the `hugo.toml` file:
 
 ```toml
-[params.tagCloud]
+\[params.tagCloud]
   enable = true
   minFontSizeRem = 0.8
   maxFontSizeRem = 2.0
@@ -525,24 +525,24 @@ is disabled by default. If you wish to configure it, add the following to the
 
 ## Remove the Sidebar
 
-If you want to get rid of the sidebar, add an empty `data/json_resume/en.json`
+If you want to get rid of the sidebar, add an empty `data/json\_resume/en.json`
 file with the following content:
 
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {},
-  "work": [],
-  "volunteer": [],
-  "education": [],
-  "awards": [],
-  "certificates": [],
-  "publications": [],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "projects": [],
+  "work": \[],
+  "volunteer": \[],
+  "education": \[],
+  "awards": \[],
+  "certificates": \[],
+  "publications": \[],
+  "skills": \[],
+  "languages": \[],
+  "interests": \[],
+  "references": \[],
+  "projects": \[],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
@@ -555,17 +555,17 @@ file with the following content:
 
 The theme uses PostCSS with following plugins:
 
-- [postcss-import](https://github.com/postcss/postcss-import)
-- [postcss-url](https://github.com/postcss/postcss-url)
-- [postcss-nesting](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting)
-- [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
+* [postcss-import](https://github.com/postcss/postcss-import)
+* [postcss-url](https://github.com/postcss/postcss-url)
+* [postcss-nesting](https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-nesting)
+* [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
 
 Additionally the following plugins are used if building the site with
 `hugo -e production`:
 
-- [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
-- [cssnano](https://github.com/cssnano/cssnano) for minification
-- [@fullhuman/postcss-purgecss](https://github.com/FullHuman/purgecss)
+* [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
+* [cssnano](https://github.com/cssnano/cssnano) for minification
+* [@fullhuman/postcss-purgecss](https://github.com/FullHuman/purgecss)
 
 Inside the `assets/css` two folders exist, `critical` and `non-critical`. Files
 inside `critical` are concatenated during build time and inlined into the
@@ -583,6 +583,86 @@ compatibility.
 
 You can add new CSS files to the PostCSS pipeline like this:
 
-- `critical/50-foo.css`
-- `non-critical/05-bar.css`
-- `non-critical/99-last.css`
+* `critical/50-foo.css`
+* `non-critical/05-bar.css`
+* `non-critical/99-last.css`
+
+\## 개인 포트폴리오 사이트 안내
+
+\### 1. 개발 환경
+
+| 도구 | 버전 |
+
+|---|---|
+
+| Hugo Extended | 0.154.5 |
+
+| Node.js | 24 |
+
+| Go | 1.27.1 |
+
+| Python | 3.12 |
+
+| Dart Sass | 1.105.0 |
+
+\### 2. 설치 및 실행
+
+프로젝트 루트 폴더에서 의존성을 설치합니다.
+
+```bash
+
+python .github/pages\_build.py --dependencies
+
+```
+
+사이트를 빌드합니다.
+
+```bash
+
+hugo --source site
+
+```
+
+로컬 미리보기 서버를 실행합니다.
+
+```bash
+
+hugo server --source site
+
+```
+
+브라우저에서 `http://localhost:1313/portfolio/`에 접속합니다.
+
+\### 3. 주요 수정 파일
+
+\- `site/config/\_default/hugo.toml`: 사이트 설정 및 메뉴
+
+\- `site/content/about.md`: 자기소개
+
+\- `site/content/cv.md`: 이력 및 학습 내용
+
+\- `site/content/ta-project.md`: TA 프로젝트 소개
+
+\- `site/content/blog/`: 블로그 콘텐츠
+
+\- `site/static/`: 이미지 및 정적 파일
+
+\### 4. 수정 내용 배포
+
+수정한 파일을 저장한 뒤 프로젝트 루트에서 다음 명령어를 실행합니다.
+
+```bash
+
+git add .
+
+git commit -m "Update portfolio"
+
+git push origin main
+
+```
+
+GitHub 저장소의 Actions 탭에서 `Deploy Hugo to GitHub Pages` 작업이 성공했는지 확인합니다.
+
+배포가 완료되면 공개 사이트에서 변경 내용을 확인합니다.
+
+<https://khj56366-droid.github.io/portfolio/>
