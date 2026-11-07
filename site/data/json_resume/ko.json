@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "김형준",
+    "label": "Programmer",
+    "image": "/portfolio/my-profile.jpg",
+    "email": "khj082828@naver.com",
+    "phone": "010-4436-5636",
+    "summary": "컴퓨터 인공지능 학부에 재학 중인 김형준입니다. 저의 포트폴리오에 접속해 주셔서 감사합니다.",
+    "location": {
+      "city": "줄신지 : 전주"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "khj56366-droid",
+        "url": "https://github.com/khj56366-droid"
+      },
+      {
+        "network": "Instagram",
+        "username": "h_jun_828",
+        "url": "https://www.instagram.com/h_jun_828/"
+      }
+    ]
+  },
+  "work": [
+ {
+    "name": "컴퓨터 인공지능 학부 사무실",
+    "url": "https://csai.jbnu.ac.kr/csai/index.do",
+    "location": "Jeonju, South Korea",
+    "description": "학부 행정 업무 지원",
+    "position": "Student Assistant",
+    "startDate": "2026-09-01",
+    "endDate": "",
+    "summary": "학부 사무실에서 행정 및 사무 업무를 지원",
+    "highlights": [
+      "강의실 점검",
+      "업무 문서 작성 및 관리"
+    ]
+  }
+
+  ],
+  "education": [
+    {
+      "institution": "전북대학교",
+      "url": "https://www.jbnu.ac.kr/web/index.do",
+      "area": "컴퓨터인공지능학부",
+      "studyType": "Bachelor",
+      "startDate": "2023-03-01",
+      "endDate": "",
+      "score": "",
+      "courses": []
+    }
+  ],
+  
+  "skills": [
+  {
+    "name": "프로그래밍 언어",
+    "level": "초급",
+    "keywords": ["C", "Java"]
+  },
+  {
+    "name": "웹 개발",
+    "level": "초급",
+    "keywords": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "name": "개발 도구",
+    "level": "초급",
+    "keywords": ["Git", "GitHub", "VS Code"]
+  },
+  {
+    "name": "운영체제",
+    "level": "초급",
+    "keywords": ["Linux"]
+  }
+],
+
+  "interests": [
+  {
+    "name": "인공지능",
+    "keywords": ["머신러닝", "딥러닝"]
+  },
+  {
+    "name": "소프트웨어 개발",
+    "keywords": ["웹 개발", "애플리케이션 개발"]
+  },
+  {
+    "name": "컴퓨터 과학",
+    "keywords": ["알고리즘", "자료구조"]
+  }
+],
+  "projects": [
+  {
+    "name": "TA 자기소개 웹페이지 제작",
+    "description": "HTML과 CSS를 활용한 개인 소개 웹페이지 제작",
+    "highlights": [
+      "HTML을 이용한 웹페이지 구조 작성",
+      "CSS를 이용한 프로필 및 취미 목록 디자인",
+      "Flexbox를 활용한 요소 배치",
+      "미디어 쿼리를 이용한 모바일 반응형 구현",
+      "Hover 및 Transition 효과 적용"
+    ],
+    "keywords": ["HTML", "CSS", "Flexbox", "Responsive Web Design"],
+    "roles": ["기획", "웹페이지 개발", "디자인"],
+    "type": "web"
+  }
+],
+
+"languages": [
+  {
+    "language": "한국어",
+    "fluency": "모국어"
+  }
+],
+
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
+}
