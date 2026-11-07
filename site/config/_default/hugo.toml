@@ -142,7 +142,7 @@ enableRobotsTXT = true
 [menu]
   [[menu.main]]
     identifier = "blog"
-    name = "Blog"
+    name = "일대기"
     url = "/blog"
     weight = 10
   [[menu.main]]
@@ -164,13 +164,14 @@ enableRobotsTXT = true
     weight = 50
 
 [languages]
+  [languages.ko]
+    languageName = "한국어"
+    weight = 1
+    [languages.ko.params.jsonResume]
+      present = "현재"
+
   [languages.en]
     languageName = "English"
-    weight = 10
+    weight = 2
     [languages.en.params.jsonResume]
       present = "present"
-  [languages.de]
-    languageName = "Deutsch"
-    weight = 20
-    [languages.de.params.jsonResume]
-      present = "heute"
