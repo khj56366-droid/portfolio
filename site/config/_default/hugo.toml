@@ -1,4 +1,4 @@
-baseURL = "http://localhost"
+baseURL = "https://khj56366-droid.github.io/portfolio/"
 copyright = "Copyright © 2026 김형준"
 title = "포트폴리오"
 #paginate = 10

@@ -1,7 +1,7 @@
 +++
 author = "김형준"
 title = "축구와 IT"
-date = "2019-03-10"
+date = "2026-11-07"
 weight = 3
 description = "축구를 즐기던 내가 컴퓨터와 IT분야로 관심을 넓혀온 과정"
 tags = [
