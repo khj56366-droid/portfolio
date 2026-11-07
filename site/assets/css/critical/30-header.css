@@ -284,3 +284,10 @@ nav#menu {
     }
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  nav#menu ul.menu--vertical,
+  nav#menu .menu__burger svg line {
+    transition: none;
+  }
+}
