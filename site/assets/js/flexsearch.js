@@ -74,7 +74,7 @@ document.addEventListener("keydown", (e) => {
   });
 
   // build index
-  const response = await fetch("/search-index.json");
+  const response = await fetch("{{ "search-index.json" | relURL }}");
   const data = await response.json();
   for (const item of data) {
     await index.addAsync(item);
