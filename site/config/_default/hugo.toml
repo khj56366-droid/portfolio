@@ -2,6 +2,7 @@ baseURL = "https://khj56366-droid.github.io/portfolio/"
 copyright = "Copyright © 2026 김형준"
 title = "포트폴리오"
 #paginate = 10
+defaultContentLanguage = "ko"
 enableRobotsTXT = true
 # Enable to calculate the last modified date from Git history and show it in the post header
 #enableGitInfo = true
