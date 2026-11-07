@@ -4,26 +4,26 @@ draft: false
 type: "cv"
 ---
 
-## Experience
+## 경력
 
 {{< json-resume "work" >}}
 
-## Education
+## 학력
 
 {{< json-resume "education" >}}
 
-## Skills
+## 기술
 
 {{< json-resume "skills" >}}
 
-## Languages
+## 언어
 
 {{< json-resume "languages" >}}
 
-## Interests
+## 관심사
 
 {{< json-resume "interests" >}}
 
-## Projects
+## 프로젝트
 
 {{< json-resume "projects" >}}

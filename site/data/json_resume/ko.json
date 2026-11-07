@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "김형준",
-    "label": "Programmer",
+    "label": "프로그래머",
     "image": "/portfolio/my-profile.jpg",
     "email": "khj082828@naver.com",
     "phone": "010-4436-5636",
