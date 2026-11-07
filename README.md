@@ -670,5 +670,6 @@ GitHub 저장소의 Actions 탭에서 `Deploy Hugo to GitHub Pages` 작업이 �
 * 이력 표시 모듈: hugo-mod-json-resume
   (<https://github.com/schnerring/hugo-mod-json-resume>),
   Hugo 모듈로 사용
-* 직접 제작: 자기소개, 이력(ko.json/en.json), 프로필 사진, 포트폴리오 콘텐츠 글
+* * 직접 제작: 자기소개, 이력(ko.json/en.json), 프로필 사진,
+블로그 글과 글에 쓴 개인 사진(childhood-football.jpg)
 * AI 도움: README 초안과 설정 오류 해결 과정에서 AI의 제안을 참고했으며, 적용 전에 직접 실행해 확인했습니다.
