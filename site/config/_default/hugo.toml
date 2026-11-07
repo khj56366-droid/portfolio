@@ -144,7 +144,8 @@ enableRobotsTXT = true
     identifier = "blog"
     name = "일대기"
     url = "/blog"
-    weight = 10
+    weight = 30
+
   [[menu.main]]
     identifier = "cv"
     name = "개인프로필"
@@ -155,13 +156,13 @@ enableRobotsTXT = true
     identifier = "About"
     name = "자기소개"
     url = "/about"
-    weight = 40
-  
+    weight = 10
+
   [[menu.main]]
     identifier = "TA-project"
     name = "TA 프로젝트"
     url = "/ta-project/"
-    weight = 50
+    weight = 40
 
 [languages]
   [languages.ko]
